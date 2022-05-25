@@ -4,9 +4,10 @@ import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Step;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
 import test.base.BaseTest;
 
-import static constants.Constant.MobileReplenishmentData.*;
+import static com.codeborne.selenide.Selenide.open;
 import static constants.Constant.Urls.MOBILE_PEYMENT_URL;
 
 public class MobilePhoneReplenishmentPositiveTest extends BaseTest {
@@ -14,11 +15,11 @@ public class MobilePhoneReplenishmentPositiveTest extends BaseTest {
     @Epic("1 тест")
     @Feature("1 тест")
     @Step("1 шаг")
-//    public void OpenTest(){
-//        open("https://next.privat24.ua/mobile/?lang=en");
-//      //  sleep(3000);
-//        $(By.xpath("//input[@data-qa-node=\"phone-number\"]")).setValue("1234567");
-//    }
+    public void OpenTest(){
+        open("https://next.privat24.ua/mobile/?lang=en");
+      //  sleep(3000);
+        $(By.xpath("//input[@data-qa-node=\"phone-number\"]")).setValue("1234567");
+    }
 
 
 
